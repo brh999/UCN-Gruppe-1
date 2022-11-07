@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author dkste
+ *
+ */
+module mainproject {
+}

@@ -38,5 +38,8 @@ public class LP {
 		this.title = title;
 	}
 	
+	public ArrayList<Copy> getCopies(){
+		return copies;
+	}
 	
 }

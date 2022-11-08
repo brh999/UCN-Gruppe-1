@@ -6,6 +6,7 @@ public class Copy {
 	private String purchaseDate;
 	private String purchasePrice;
 	
+	
 	public Copy( String purchaseDate, String purchasePrice) {
 		this.purchaseDate = purchaseDate;
 		this.purchasePrice = purchasePrice;

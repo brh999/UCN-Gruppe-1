@@ -11,15 +11,16 @@ public class LoanCont {
 	
 	public Copy findCopyAvailable(LP lp) {
 		Copy res = null;
-		for(Copy c : lp.getCopies()) {
+		ArrayList<Copy> copies = lp.getCopies();
+		for(int i = 0; i < copies.size(); i++) {
 			boolean isLoaned = false;
 			for(Loan l : loans) {
-				if(l.getCopy() == c) {
+				if(l.getCopy() == copies.get(i)) {
 					isLoaned = true;
 				}
 			}
 			if(!isLoaned) {
-				res = c;
+				res = copies.get(i);
 			}
 		}
 		return res;

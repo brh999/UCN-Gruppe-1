@@ -20,9 +20,9 @@ public class FriendCont {
 
 	public static Friend findFriendByPhone(String phone) {
 		Friend res = null;
-		for (Friend f : friends) {
-			if (f.getPhone().equals(res)) {
-				res = f;
+		for (int i = 0; i < friends.size(); i++) {
+			if (friends.get(i).getPhone().equals(phone)) {
+				res = friends.get(i);
 			}
 		}
 		if (res == null) {

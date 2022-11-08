@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class MainMenuUi {
 	private Scanner scanner;
+	private LoanUi loanUi;
 	
 	public MainMenuUi() {
 		scanner = new Scanner(System.in);
+		loanUi = new LoanUi();
 	}
 	
 	public void start() {
@@ -41,8 +43,7 @@ public class MainMenuUi {
 	}
 
 	private void loanMenu() {
-		LoanUi ui = new LoanUi();
-		ui.start();
+		loanUi.start();
 	}
 
 	private void optionsMessage() {

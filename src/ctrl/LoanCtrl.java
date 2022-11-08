@@ -10,8 +10,13 @@ public class LoanCtrl {
 		return cLoan;
 	}
 	
-	public Friend findFriendByPhone(String phone) {
-		return null;
+	public void loanSetCopy(String title) {
+		cLoan.setCopy(findAvailableCopyByTitle(title));
+		System.out.println("Added copy:  " + cLoan.getCopy() +  " - to loan");
+	}
+	
+	public void loanSetFriend(String phone) {
+		cLoan.setFriend(FriendCont.findFriendByPhone(phone));
 	}
 	
 	public Copy findAvailableCopyByTitle(String title) {

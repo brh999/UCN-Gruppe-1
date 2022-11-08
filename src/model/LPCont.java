@@ -7,7 +7,7 @@ public class LPCont {
 	private static LPCont instance;
 	private ArrayList<LP> LPs;
 
-	public static LPCont getInstamce() {
+	public static LPCont getInstance() {
 		if (instance == null) {
 			instance = new LPCont();
 		}

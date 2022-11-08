@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 
 public class Loan {
-	private static int loanNumber = 1;
+	private int loanNumber = 0;
 	private LocalDate date;
 	private String borrowDate;
 	private String returnDate;
@@ -12,14 +12,12 @@ public class Loan {
 	private Friend friend;
 	
 	public Loan(long borrowDays) {
-//		loanNumber = loanNumber;  TODO fix
 		date = LocalDate.now();
 		borrowDate = date.toString();
 		returnDate = date.plusDays(borrowDays).toString(); // TODO er dette lovligt?
 		state = true;
 		copy = null;
 		friend = null;
-		loanNumber++;
 	}
 
 	public Copy getCopy() {

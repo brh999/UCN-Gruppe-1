@@ -10,7 +10,7 @@ public class LPCtrl {
 	}
 	
 	public static LP findLPByTitle(String title) {
-		LPCont lpc = LPCont.getInstamce();
+		LPCont lpc = LPCont.getInstance();
 		LP lp = lpc.findLPByTitle(title);
 		return lp;
 	}

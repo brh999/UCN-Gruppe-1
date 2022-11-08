@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class MainMenuUi {
 	private Scanner scanner;
-	
+
 	public MainMenuUi() {
 		scanner = new Scanner(System.in);
 	}
-	
+
 	public void start() {
 		boolean goOn = true;
 		while (goOn) {
@@ -36,8 +36,7 @@ public class MainMenuUi {
 	}
 
 	private void testData() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	private void loanMenu() {
@@ -47,12 +46,8 @@ public class MainMenuUi {
 
 	private void optionsMessage() {
 		clearConsole();
-		System.out.println("****** Main Menu ******\n"
-		 	     + "(1) Friends menu (N/A)\n"
-		 	     + "(2) LP menu (N/A)\n"
-		 	     + "(3) Loan menu\n"
-		 	     + "(9) Generate test data (N/A)\n"
-				 + "(0) Quit the program\n");
+		System.out.println("****** Main Menu ******\n" + "(1) Friends menu (N/A)\n" + "(2) LP menu (N/A)\n"
+				+ "(3) Loan menu\n" + "(9) Generate test data (N/A)\n" + "(0) Quit the program\n");
 		System.out.print("Choice: ");
 	}
 

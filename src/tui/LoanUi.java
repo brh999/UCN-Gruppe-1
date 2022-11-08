@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class LoanUi {
 	private Scanner scanner;
-	
+
 	public LoanUi() {
 		scanner = new Scanner(System.in);
 	}
 
 	public void start() {
 		boolean goOn = true;
-		while(goOn) {
+		while (goOn) {
 			optionsMessage();
 			String input = scanner.nextLine();
-			switch(input) {
+			switch (input) {
 			case "1":
 				break;
 			case "2":
@@ -30,17 +30,15 @@ public class LoanUi {
 
 	private void optionsMessage() {
 		clearConsole();
-		System.out.println("****** Loan Menu ******\n"
-						 + "(1) Lend LP\n"
-						 + "(2) Return LP (N/A)\n"
-						 + "(3) Return to main menu\n");
+		System.out.println(
+				"****** Loan Menu ******\n" + "(1) Lend LP\n" + "(2) Return LP (N/A)\n" + "(3) Return to main menu\n");
 		System.out.print("Choice: ");
 	}
 
 	private void clearConsole() {
 		System.out.println("\n\n\n\n\n\n\n\n\n\n");
 	}
-	
+
 	private void unknownInput(String input) {
 		System.out.println("Input: " + input + " is not a valid command.");
 	}

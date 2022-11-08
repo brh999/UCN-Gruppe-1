@@ -29,4 +29,8 @@ public class LPCont {
 		return res;
 	}
 
+	public void addLP(LP lp) {
+		LPs.add(lp);
+	}
+
 }

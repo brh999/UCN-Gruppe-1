@@ -31,4 +31,8 @@ public class FriendCont {
 		return res;
 	}
 
+	public void addFriend(Friend f) {
+		friends.add(f);
+	}
+
 }

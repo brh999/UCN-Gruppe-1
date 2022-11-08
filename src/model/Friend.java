@@ -6,7 +6,7 @@ public class Friend {
 	private String postal;
 	private String city;
 	private String phone;
-	
+
 	public Friend(String name, String address, String postal, String city, String phone) {
 		this.name = name;
 		this.address = address;
@@ -14,9 +14,9 @@ public class Friend {
 		this.city = city;
 		this.phone = phone;
 	}
-	
+
 	public String getPhone() {
 		return phone;
 	}
-	
+
 }

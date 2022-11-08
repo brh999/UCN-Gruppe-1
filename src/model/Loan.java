@@ -10,7 +10,7 @@ public class Loan {
 	private boolean state;
 	private Copy copy;
 	private Friend friend;
-	
+
 	public Loan(long borrowDays) {
 		date = LocalDate.now();
 		borrowDate = date.toString();
@@ -35,11 +35,11 @@ public class Loan {
 	public void setFriend(Friend friend) {
 		this.friend = friend;
 	}
-	
+
 	public void setBorrowDate(LocalDate d) {
 		this.borrowDate = d.toString(); // TODO LocalDate vs String
 	}
-	
+
 	public void setReturnDate(LocalDate d, long daysToAdd) {
 		this.returnDate = d.plusDays(daysToAdd).toString(); // TODO lovlig metode?
 	}

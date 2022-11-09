@@ -5,6 +5,7 @@ public class Copy {
 	private int serialNumber;
 	private String purchaseDate;
 	private String purchasePrice;
+	private static int serialNumbersInTotal = 0;
 
 	public Copy(String purchaseDate, String purchasePrice) {
 		this.purchaseDate = purchaseDate;
@@ -13,7 +14,8 @@ public class Copy {
 	}
 
 	private int generateSerialNumber() {
-		return 10; // TODO generateSerialNumbers
+		serialNumbersInTotal++;
+		return serialNumbersInTotal;
 	}
 
 	public int getSerialNumber() {

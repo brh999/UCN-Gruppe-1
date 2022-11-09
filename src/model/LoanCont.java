@@ -36,11 +36,7 @@ public class LoanCont {
 		loans = new ArrayList<>();
 	}
 	
-	/**
-	 * This method finds
-	 * @param lp
-	 * @return
-	 */
+	
 	public Copy findCopyAvailable(LP lp) {
 		Copy res = null;
 		ArrayList<Copy> copies = lp.getCopies();

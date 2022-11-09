@@ -6,7 +6,7 @@ import ctrl.*;
 public class LoanCtrl {
 	private Loan cLoan;
 
-	public Loan createLoan(long loanPeriod) {
+	public Loan createLoan(int loanPeriod) {
 		cLoan = new Loan(loanPeriod);
 		return cLoan;
 	}

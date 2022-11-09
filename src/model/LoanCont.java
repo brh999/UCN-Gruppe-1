@@ -48,7 +48,7 @@ public class LoanCont {
 			boolean isLoaned = false;
 			for (Loan l : loans) {
 				if (l.getCopy() == copies.get(i)) {
-					isLoaned = true;
+					isLoaned = l.isLent();
 				}
 			}
 			if (!isLoaned) {

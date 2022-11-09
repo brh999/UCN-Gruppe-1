@@ -13,23 +13,21 @@ import java.time.LocalDate;
 
 public class Loan {
 	private int loanNumber = 0;
-	private LocalDate date;
-	private String borrowDate;
+	private LocalDate borrowDate;
 	private int daysBorrowed;
-	private boolean state;
+	private boolean lent;
 	private Copy copy;
 	private Friend friend;
 
 	/**
-	 * Constructor for the objects of class Loan
+	 * Constructor for the objects of class Loan (Move borrowDate up to Controller)
 	 * 
 	 * @param borrowDays the amount of days the loan will last
 	 */
 	public Loan(int borrowDays) {
-		date = LocalDate.now();
-		borrowDate = date.toString();
+		borrowDate = LocalDate.now();
 		daysBorrowed = borrowDays;
-		state = true;
+		lent = true;
 		copy = null;
 		friend = null;
 	}
@@ -57,8 +55,8 @@ public class Loan {
 	 * 
 	 * @return boolean state of this Loan
 	 */
-	public boolean isState() {
-		return state;
+	public boolean isLent() {
+		return lent;
 	}
 
 	/**
@@ -77,7 +75,7 @@ public class Loan {
 	 *          with
 	 */
 	public void setBorrowDate(LocalDate d) {
-		this.borrowDate = d.toString(); // TODO LocalDate vs String
+		this.borrowDate = d; // TODO LocalDate vs String
 	}
 
 	/**
@@ -105,6 +103,10 @@ public class Loan {
 	 */
 	public Friend getFriend() {
 		return friend;
+	}
+	
+	public void setLent(boolean lent) {
+		this.lent = lent;
 	}
 
 }

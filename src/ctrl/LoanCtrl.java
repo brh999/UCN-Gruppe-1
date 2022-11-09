@@ -31,7 +31,7 @@ public class LoanCtrl {
 	 */
 	public Friend findFriendByPhone(String phone) {
 		Friend res = null;
-		res = FriendCtrl.findFriendByPhone(phone);
+		res = new FriendCtrl().findFriendByPhone(phone);
 		cLoan.setFriend(res);
 		return res;
 	}

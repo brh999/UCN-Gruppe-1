@@ -2,6 +2,8 @@ package tui;
 
 import java.util.Scanner;
 
+import ctrl.LoanCtrl;
+
 public class LoanUi {
 	private Scanner scanner;
 
@@ -16,6 +18,7 @@ public class LoanUi {
 			String input = scanner.nextLine();
 			switch (input) {
 			case "1":
+				createLoan();
 				break;
 			case "2":
 				break;
@@ -26,6 +29,11 @@ public class LoanUi {
 				unknownInput(input);
 			}
 		}
+	}
+
+	private void createLoan() {
+		LoanCtrl lc = new LoanCtrl();
+		lc.createLoan();
 	}
 
 	private void optionsMessage() {

@@ -1,7 +1,7 @@
 package model;
 
 /**
- * This class is Friend i.e. create a Friend.
+ * This class is Friend i.e. creates a Friend.
  * 
  * @author Alex
  * @author Rasmus
@@ -53,8 +53,8 @@ public class Friend {
 		return name;
 	}
 	/**
-	 * This funktion sets name
-	 * @param name
+	 * This function overwrites name with specified new name
+	 * @param name 
 	 */
 	public void setName(String name) {
 		this.name = name;

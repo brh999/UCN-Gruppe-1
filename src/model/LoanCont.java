@@ -58,7 +58,7 @@ public class LoanCont {
 		return res;
 	}
 
-	public static void addLoanToContainer(Loan cLoan) {
+	public void addLoanToContainer(Loan cLoan) {
 		loans.add(cLoan);
 	}
 

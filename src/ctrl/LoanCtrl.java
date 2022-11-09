@@ -59,7 +59,7 @@ public class LoanCtrl {
 	 */
 
 	public void confirmLoan() {
-		LoanCont.addLoanToContainer(cLoan);
+		LoanCont.getInstance().addLoanToContainer(cLoan);
 	}
 
 	public Loan getcLoan() {

@@ -12,12 +12,16 @@ public class LoanCtrl {
 	}
 
 	public Friend findFriendByPhone(String phone) {
-		return FriendCtrl.findFriendByPhone(phone);
+		Friend res = null;
+		res = FriendCtrl.findFriendByPhone(phone);
+		cLoan.setFriend(res);
+		return res;
 	}
 
 	public Copy findAvailableCopyByTitle(String title) {
 		LP lp = LPCtrl.findLPByTitle(title);
 		Copy res = LoanCont.getInstance().findCopyAvailable(lp);
+		cLoan.setCopy(res);
 		return res;
 	}
 

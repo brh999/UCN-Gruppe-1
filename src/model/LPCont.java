@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class LPCont {
 
 	private static LPCont instance;
-	private static ArrayList<LP> LPs;
+	private ArrayList<LP> LPs;
 
 	/**
 	 * This method creates a ArrayList of LP objects as a singleton.
@@ -67,7 +67,7 @@ public class LPCont {
 	 * 
 	 * @return ArrayList of LP objects in LPs
 	 */
-	public static ArrayList<LP> getLPs() {
+	public ArrayList<LP> getLPs() {
 		return LPs;
 	}
 

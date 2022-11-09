@@ -36,6 +36,7 @@ public class Loan {
 
 	/**
 	 * Returns the Copy object of this Loan
+	 * 
 	 * @return the Copy object of this Loan
 	 */
 	public Copy getCopy() {
@@ -44,7 +45,8 @@ public class Loan {
 
 	/**
 	 * Overwrites the Copy object of this Loan with specified Copy object
-	 * @param copy  new Copy object to overwrite the old Copy object with
+	 * 
+	 * @param copy new Copy object to overwrite the old Copy object with
 	 */
 	public void setCopy(Copy copy) {
 		this.copy = copy;
@@ -52,6 +54,7 @@ public class Loan {
 
 	/**
 	 * Returns the current state of this Loan
+	 * 
 	 * @return boolean state of this Loan
 	 */
 	public boolean isState() {
@@ -60,7 +63,8 @@ public class Loan {
 
 	/**
 	 * Overwrites the Friend object of this Loan with specified Friend object
-	 * @param friend  new Friend object to overwrite the old Friend object with
+	 * 
+	 * @param friend new Friend object to overwrite the old Friend object with
 	 */
 	public void setFriend(Friend friend) {
 		this.friend = friend;
@@ -68,7 +72,9 @@ public class Loan {
 
 	/**
 	 * Overwrites the borrowDate of this Loan with specified new date
-	 * @param d  LocalDate object to convert to String and overwrite old borrowDate with
+	 * 
+	 * @param d LocalDate object to convert to String and overwrite old borrowDate
+	 *          with
 	 */
 	public void setBorrowDate(LocalDate d) {
 		this.borrowDate = d.toString(); // TODO LocalDate vs String
@@ -76,7 +82,8 @@ public class Loan {
 
 	/**
 	 * Overwrites the daysBorrowed of this Loan with specified daysToAdd
-	 * @param daysToAdd  new daysToAdd to overwrite the old daysBorrowed with
+	 * 
+	 * @param daysToAdd new daysToAdd to overwrite the old daysBorrowed with
 	 */
 	public void setDaysBorrowed(int daysToAdd) {
 		daysBorrowed = daysToAdd;
@@ -84,7 +91,8 @@ public class Loan {
 
 	/**
 	 * Increments daysBorrowed by specified days
-	 * @param days  amount of days to increment daysBorrowed with
+	 * 
+	 * @param days amount of days to increment daysBorrowed with
 	 */
 	public void addDaysToLoan(int days) {
 		daysBorrowed += days;
@@ -92,6 +100,7 @@ public class Loan {
 
 	/**
 	 * Returns the Friend object of this Loan
+	 * 
 	 * @return the Friend object of this Loan
 	 */
 	public Friend getFriend() {

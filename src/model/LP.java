@@ -75,7 +75,8 @@ public class LP {
 	}
 
 	/**
-	 * Returns the ArrayList of Copy objects from this LP // TODO er det en ny ArrayList eller en memory reference?
+	 * Returns the ArrayList of Copy objects from this LP // TODO er det en ny
+	 * ArrayList eller en memory reference?
 	 * 
 	 * @return ArrayList of Copy objects from this LP
 	 */

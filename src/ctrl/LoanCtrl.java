@@ -2,6 +2,7 @@ package ctrl;
 
 import model.*;
 import ctrl.*;
+
 /**
  * 
  * @author Rasmus, Alex, Kasper, Dani
@@ -11,9 +12,10 @@ import ctrl.*;
 public class LoanCtrl {
 	private Loan cLoan;
 
-	/** Create a loan object
+	/**
+	 * Create a loan object
 	 * 
-	 * @param loanPeriod 
+	 * @param loanPeriod
 	 * @return Loan
 	 */
 	public Loan createLoan(int loanPeriod) {
@@ -21,9 +23,10 @@ public class LoanCtrl {
 		return cLoan;
 	}
 
-	/** Find a Friend object by phone
+	/**
+	 * Find a Friend object by phone
 	 * 
-	 * @param phone  Phone number to find friend by
+	 * @param phone Phone number to find friend by
 	 * @return Friend
 	 */
 	public Friend findFriendByPhone(String phone) {
@@ -33,19 +36,25 @@ public class LoanCtrl {
 		return res;
 	}
 
-	/** Find first available copy by title
+	/**
+	 * Find first available copy by title
 	 * 
 	 * @param title The title of the copy
 	 * @return Copy
 	 */
 	public Copy findAvailableCopyByTitle(String title) {
+		Copy res = null;
 		LP lp = LPCtrl.findLPByTitle(title);
-		Copy res = LoanCont.getInstance().findCopyAvailable(lp);
-		cLoan.setCopy(res);
+		if (lp != null) {
+			res = LoanCont.getInstance().findCopyAvailable(lp);
+			cLoan.setCopy(res);
+		}
+
 		return res;
 	}
-	
-	/** Confirm loan by adding the loan to the LoanCont
+
+	/**
+	 * Confirm loan by adding the loan to the LoanCont
 	 * 
 	 */
 

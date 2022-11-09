@@ -61,30 +61,60 @@ public class LoanUi {
 		Loan l = lc.getcLoan();
 		Copy c = l.getCopy();
 		Friend f = l.getFriend();
-		System.out.println(f.getName()+ " has lent the copy with the serial number: " + c.getSerialNumber());
+		System.out.println(f.getName() + " has lent the copy with the serial number: " + c.getSerialNumber());
 	}
 
 	private void findCopyByTitle() {
 		System.out.println("Input the title of your LP: ");
-		String input = scanner.nextLine();
-		//TODO try catch
-		lc.findAvailableCopyByTitle(input);
+		String input = scanner.nextLine().toLowerCase();
+
+		if (lc.findAvailableCopyByTitle(input) == null) {
+			System.out.println(input + " is not a valid input or all copies are lent out."
+					+ "\nPlease try agian(Press any key to continue)");
+			scanner.nextLine();
+			findCopyByTitle();
+		} else {
+			lc.findAvailableCopyByTitle(input);
+		}
 	}
 
 	private void addFriendToLoan() {
 		System.out.println("What's you friend/lenders phone number?");
 		System.out.println("Write here: ");
 		String input = scanner.nextLine();
-		//TODO Try catch
-		lc.findFriendByPhone(input);
+		if (isNumeric(input)) {
+			lc.findFriendByPhone(input);
+		} else {
+			System.out.println(input + " is not a valid number." 
+					+ "\nPlease try agian(Press any key to continue)");
+			scanner.nextLine();
+			addFriendToLoan();
+		}
+
 	}
 
 	private void createLoan() {
 		System.out.println("How many days do you want to rent this LP out?");
 		System.out.println("Choice: ");
-		int input = Integer.parseInt(scanner.nextLine());
-		//TODO Try catch
-		lc.createLoan(input);
+		String input = scanner.nextLine();
+		if (isNumeric(input)) {
+			lc.createLoan(Integer.parseInt(input));
+		} else {
+			System.out.println(input + " is not a valid number." 
+					+ "\nPlease try agian(Press any key to continue)");
+			scanner.nextLine();
+			createLoan();
+		}
+
+	}
+
+	private boolean isNumeric(String str) {
+		try {
+			Integer.parseInt(str);
+			return true;
+		} catch (NumberFormatException e) {
+			return false;
+		}
 	}
 
 	private void optionsMessage() {

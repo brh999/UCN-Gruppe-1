@@ -15,6 +15,7 @@ public class Copy {
 	private String purchaseDate;
 	private String purchasePrice;
 	private static int serialNumbersInTotal = 0;
+	private LP lp;
 
 	/**
 	 * Constructor for objects of class Copy
@@ -45,6 +46,11 @@ public class Copy {
 	 */
 	public int getSerialNumber() {
 		return serialNumber;
+	}
+
+	public void setLP(LP lp) {
+		this.lp = lp;
+		
 	}
 
 }

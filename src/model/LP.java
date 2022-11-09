@@ -54,6 +54,7 @@ public class LP {
 	 */
 	private void addCopy(Copy c) {
 		copies.add(c);
+		c.setLP(this);
 	}
 
 	/**

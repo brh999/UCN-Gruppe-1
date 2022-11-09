@@ -1,11 +1,31 @@
 package model;
 
+/**
+ * This class is Friend i.e. create a Friend.
+ * 
+ * @author Alex
+ * @author Rasmus
+ * @author Kasper
+ * @author Danny
+ *
+ * @date 10/11/2022
+ */
+
 public class Friend {
 	private String name;
 	private String address;
 	private String postal;
 	private String city;
 	private String phone;
+
+	/**
+ 	* This methos creates a Friend with:
+ 	* @param name
+ 	* @param address
+ 	* @param postal
+ 	* @param city
+ 	* @param phone
+ 	*/
 
 	public Friend(String name, String address, String postal, String city, String phone) {
 		this.name = name;
@@ -15,14 +35,27 @@ public class Friend {
 		this.phone = phone;
 	}
 
+	/**
+	 * This methos returns phone from a friend
+	 * @return phone
+	 */
+
 	public String getPhone() {
 		return phone;
 	}
 
+	/**
+	 * This methos returns name
+	 * @return name
+	 */
+
 	public String getName() {
 		return name;
 	}
-
+	/**
+	 * This funktion sets name
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

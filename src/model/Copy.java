@@ -16,4 +16,8 @@ public class Copy {
 		return 10; // TODO generateSerialNumbers
 	}
 
+	public int getSerialNumber() {
+		return serialNumber;
+	}
+
 }

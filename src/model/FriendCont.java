@@ -15,7 +15,7 @@ import java.util.*;
 public class FriendCont {
 
 	private static FriendCont instance;
-	private static ArrayList<Friend> friends;
+	private ArrayList<Friend> friends;
 
 	/**
 	 * This method creates a ArrayList of Friend objects as a singleton.
@@ -42,7 +42,7 @@ public class FriendCont {
 	 * @param phone number of specific Friend
 	 * @return Friend object with associated phone number
 	 */
-	public static Friend findFriendByPhone(String phone) {
+	public Friend findFriendByPhone(String phone) {
 		Friend res = null;
 		for (int i = 0; i < friends.size(); i++) {
 			if (friends.get(i).getPhone().equals(phone)) {
@@ -69,7 +69,7 @@ public class FriendCont {
 	 * 
 	 * @return ArrayList of Friend objects in friends
 	 */
-	public static ArrayList<Friend> getFriends() {
+	public ArrayList<Friend> getFriends() {
 		return friends;
 	}
 

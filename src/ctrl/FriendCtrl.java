@@ -17,8 +17,8 @@ public class FriendCtrl {
 	 * @param phone Phone number to search friend by
 	 * @return Friend
 	 */
-	public static Friend findFriendByPhone(String phone) {
-		return FriendCont.findFriendByPhone(phone);
+	public Friend findFriendByPhone(String phone) {
+		return FriendCont.getInstance().findFriendByPhone(phone);
 	}
 	
 	

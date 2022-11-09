@@ -6,15 +6,15 @@ public class Loan {
 	private int loanNumber = 0;
 	private LocalDate date;
 	private String borrowDate;
-	private String returnDate;
+	private int daysBorrowed;
 	private boolean state;
 	private Copy copy;
 	private Friend friend;
 
-	public Loan(long borrowDays) {
+	public Loan(int borrowDays) {
 		date = LocalDate.now();
 		borrowDate = date.toString();
-		returnDate = date.plusDays(borrowDays).toString(); // TODO er dette lovligt?
+		daysBorrowed = borrowDays; 
 		state = true;
 		copy = null;
 		friend = null;
@@ -40,7 +40,11 @@ public class Loan {
 		this.borrowDate = d.toString(); // TODO LocalDate vs String
 	}
 
-	public void setReturnDate(LocalDate d, long daysToAdd) {
-		this.returnDate = d.plusDays(daysToAdd).toString(); // TODO lovlig metode?
+	public void setDaysBorrowed(int daysToAdd) {
+		daysBorrowed = daysToAdd; 
+	}
+	
+	public void addDaysToLoan(int days) {
+		daysBorrowed += days;
 	}
 }

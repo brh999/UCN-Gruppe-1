@@ -2,11 +2,26 @@ package model;
 
 import java.util.*;
 
+/**
+ * This class is the container for Friend objects.
+ * 
+ * @author Alex
+ * @author Rasmus
+ * @author Kasper
+ * @author Danny
+ *
+ * @date 10/11/2022
+ */
 public class FriendCont {
 
 	private static FriendCont instance;
 	private static ArrayList<Friend> friends;
 
+	/**
+	 * This method creates a ArrayList of Friend objects as a singleton.
+	 * 
+	 * @return instance of FriendCont
+	 */
 	public static FriendCont getInstance() {
 		if (instance == null) {
 			instance = new FriendCont();
@@ -14,10 +29,19 @@ public class FriendCont {
 		return instance;
 	}
 
+	/**
+	 * This is the constructor for the FriendCont and creates an instance of friends
+	 */
 	private FriendCont() {
 		friends = new ArrayList<>();
 	}
 
+	/**
+	 * This method finds a Friend object from by searching for phone number
+	 * 
+	 * @param phone number of specific Friend
+	 * @return Friend object with associated phone number
+	 */
 	public static Friend findFriendByPhone(String phone) {
 		Friend res = null;
 		for (int i = 0; i < friends.size(); i++) {
@@ -31,10 +55,20 @@ public class FriendCont {
 		return res;
 	}
 
+	/**
+	 * This method adds a Friend object to the ArrayList of friends
+	 * 
+	 * @param f should be a Friend object
+	 */
 	public void addFriend(Friend f) {
 		friends.add(f);
 	}
-	
+
+	/**
+	 * This method gets Friends in the ArrayList friends
+	 * 
+	 * @return ArrayList of Friend objects in friends
+	 */
 	public static ArrayList<Friend> getFriends() {
 		return friends;
 	}

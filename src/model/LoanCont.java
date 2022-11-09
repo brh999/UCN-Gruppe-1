@@ -2,14 +2,45 @@ package model;
 
 import java.util.*;
 
+/**
+ * This class is the container for Loan objects.
+ * 
+ * @author Alex
+ * @author Rasmus
+ * @author Kasper
+ * @author Danny
+ *
+ * @date 10/11/2022
+ */
 public class LoanCont {
+
 	private static LoanCont instance;
 	private static ArrayList<Loan> loans;
 
+	/**
+	 * This method creates a ArrayList of Loan objects as a singleton.
+	 * 
+	 * @return instance of LoanCont
+	 */
+	public static LoanCont getInstance() {
+		if (instance == null) {
+			instance = new LoanCont();
+		}
+		return instance;
+	}
+
+	/**
+	 * This is the constructor for the LoanCont and creates an instance of loans
+	 */
 	public LoanCont() {
 		loans = new ArrayList<>();
 	}
-
+	
+	/**
+	 * This method finds
+	 * @param lp
+	 * @return
+	 */
 	public Copy findCopyAvailable(LP lp) {
 		Copy res = null;
 		ArrayList<Copy> copies = lp.getCopies();
@@ -29,13 +60,6 @@ public class LoanCont {
 
 	public static void addLoanToContainer(Loan cLoan) {
 		loans.add(cLoan);
-	}
-
-	public static LoanCont getInstance() {
-		if (instance == null) {
-			instance = new LoanCont();
-		}
-		return instance;
 	}
 
 }

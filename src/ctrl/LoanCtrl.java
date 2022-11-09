@@ -53,4 +53,8 @@ public class LoanCtrl {
 		LoanCont.addLoanToContainer(cLoan);
 	}
 
+	public Loan getcLoan() {
+		return cLoan;
+	}
+
 }

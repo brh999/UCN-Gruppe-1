@@ -18,9 +18,13 @@ public class Friend {
 	public String getPhone() {
 		return phone;
 	}
-	
+
 	public String getName() {
 		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

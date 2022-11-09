@@ -3,6 +3,7 @@ package tui;
 import java.util.Scanner;
 
 import ctrl.LoanCtrl;
+import model.*;
 
 public class LoanUi {
 	private Scanner scanner;
@@ -44,6 +45,8 @@ public class LoanUi {
 			switch (input) {
 			case "y":
 				lc.confirmLoan();
+				printReciept();
+				goOn = false;
 				break;
 			case "n":
 				goOn = false;
@@ -52,6 +55,13 @@ public class LoanUi {
 				unknownInput(input);
 			}
 		}
+	}
+
+	private void printReciept() {
+		Loan l = lc.getcLoan();
+		Copy c = l.getCopy();
+		Friend f = l.getFriend();
+		System.out.println(f.getName()+ " has lent the copy with the serial number: " + c.getSerialNumber());
 	}
 
 	private void findCopyByTitle() {

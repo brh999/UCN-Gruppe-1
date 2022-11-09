@@ -47,4 +47,9 @@ public class Loan {
 	public void addDaysToLoan(int days) {
 		daysBorrowed += days;
 	}
+
+	public Friend getFriend() {
+		return friend;
+	}
+	
 }

@@ -1,6 +1,8 @@
 package tui;
 
-import java.util.Scanner;
+import java.util.*;
+import model.*;
+import ctrl.*;
 
 public class MainMenuUi {
 	private Scanner scanner;
@@ -16,6 +18,7 @@ public class MainMenuUi {
 			String input = scanner.nextLine();
 			switch (input) {
 			case "1":
+				
 				break;
 			case "2":
 				break;
@@ -36,7 +39,7 @@ public class MainMenuUi {
 	}
 
 	private void testData() {
-
+		
 	}
 
 	private void loanMenu() {

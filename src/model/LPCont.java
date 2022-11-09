@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class LPCont {
 
 	private static LPCont instance;
-	private ArrayList<LP> LPs;
+	private static ArrayList<LP> LPs;
 
 	public static LPCont getInstance() {
 		if (instance == null) {
@@ -31,6 +31,10 @@ public class LPCont {
 
 	public void addLP(LP lp) {
 		LPs.add(lp);
+	}
+	
+	public static ArrayList<LP> getLPs(){
+		return LPs;
 	}
 
 }

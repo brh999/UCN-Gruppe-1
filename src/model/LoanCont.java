@@ -15,7 +15,7 @@ import java.util.*;
 public class LoanCont {
 
 	private static LoanCont instance;
-	private static ArrayList<Loan> loans;
+	private ArrayList<Loan> loans;
 
 	/**
 	 * This method creates a ArrayList of Loan objects as a singleton.

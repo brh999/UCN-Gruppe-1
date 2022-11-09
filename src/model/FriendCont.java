@@ -34,5 +34,9 @@ public class FriendCont {
 	public void addFriend(Friend f) {
 		friends.add(f);
 	}
+	
+	public static ArrayList<Friend> getFriends() {
+		return friends;
+	}
 
 }

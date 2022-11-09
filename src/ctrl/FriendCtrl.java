@@ -8,4 +8,5 @@ public class FriendCtrl {
 	public static Friend findFriendByPhone(String phone) {
 		return FriendCont.findFriendByPhone(phone);
 	}
+	
 }

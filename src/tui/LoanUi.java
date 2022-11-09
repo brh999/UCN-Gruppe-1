@@ -33,7 +33,11 @@ public class LoanUi {
 
 	private void createLoan() {
 		LoanCtrl lc = new LoanCtrl();
-		lc.createLoan();
+		System.out.println("How many days do you want to rent this LP out?");
+		System.out.println("Choice: ");
+		int input = Integer.parseInt(scanner.nextLine());
+		//TODO Try catch
+		lc.createLoan(input);
 	}
 
 	private void optionsMessage() {

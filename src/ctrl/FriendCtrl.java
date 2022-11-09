@@ -5,7 +5,7 @@ import model.Friend;
 
 public class FriendCtrl {
 
-	public Friend findFriendByPhone(String phone) {
+	public static Friend findFriendByPhone(String phone) {
 		return FriendCont.findFriendByPhone(phone);
 	}
 }

@@ -12,7 +12,7 @@ public class LoanCtrl {
 	}
 
 	public Friend findFriendByPhone(String phone) {
-		return null;
+		return FriendCtrl.findFriendByPhone(phone);
 	}
 
 	public Copy findAvailableCopyByTitle(String title) {

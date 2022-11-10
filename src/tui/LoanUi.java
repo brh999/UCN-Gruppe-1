@@ -61,7 +61,7 @@ public class LoanUi {
 		Loan l = lc.getcLoan();
 		Copy c = l.getCopy();
 		Friend f = l.getFriend();
-		System.out.println(f.getName() + " has lent the copy with the serial number: " + c.getSerialNumber());
+		System.out.println(f.getName() + " has lent " + c.getTitle() +" with the serial number: " + c.getSerialNumber());
 	}
 
 	private void findCopyByTitle() {

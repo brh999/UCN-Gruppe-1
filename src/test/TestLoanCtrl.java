@@ -99,12 +99,11 @@ class TestLoanCtrl {
 		Loan l3 = lctrl.getcLoan();
 
 		// Act
-		ArrayList<Loan> loans = lc.getLoans();
 
 		// Assert
 
 		assertEquals(null, l3.getCopy());
-		assertEquals(2, loans.size());
+		assertEquals(2, lc.getLoansSize());
 
 	}
 

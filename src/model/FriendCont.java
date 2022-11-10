@@ -64,13 +64,4 @@ public class FriendCont {
 		friends.add(f);
 	}
 
-	/**
-	 * This method gets Friends in the ArrayList friends
-	 * 
-	 * @return ArrayList of Friend objects in friends
-	 */
-	public ArrayList<Friend> getFriends() {
-		return friends;
-	}
-
 }

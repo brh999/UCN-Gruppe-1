@@ -63,8 +63,8 @@ public class LoanCont {
 		loans.add(cLoan);
 	}
 
-	public ArrayList<Loan> getLoans() {
-		return loans;
+	public int getLoansSize() {
+		return loans.size();
 	}
 
 }

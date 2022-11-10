@@ -66,14 +66,6 @@ public class LP {
 		return title;
 	}
 
-	/**
-	 * Overwrites the title of this LP with the specified title
-	 * 
-	 * @param title new title to overwrite the old title with
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
 
 	/**
 	 * Returns the ArrayList of Copy objects from this LP // TODO er det en ny

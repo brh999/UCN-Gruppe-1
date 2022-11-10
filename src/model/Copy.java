@@ -52,5 +52,9 @@ public class Copy {
 		this.lp = lp;
 		
 	}
+	
+	public String getTitle() {
+		return lp.getTitle();
+	}
 
 }

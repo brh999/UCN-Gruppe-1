@@ -62,13 +62,5 @@ public class LPCont {
 		LPs.add(lp);
 	}
 
-	/**
-	 * This method gets LPs in the ArrayList LPs
-	 * 
-	 * @return ArrayList of LP objects in LPs
-	 */
-	public ArrayList<LP> getLPs() {
-		return LPs;
-	}
 
 }

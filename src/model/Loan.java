@@ -13,7 +13,7 @@ import java.time.LocalDate;
 
 public class Loan {
 	private int loanNumber = 0;
-	private LocalDate borrowDate;
+	private LocalDate startDate;
 	private int daysBorrowed;
 	private boolean lent;
 	private Copy copy;
@@ -25,7 +25,7 @@ public class Loan {
 	 * @param borrowDays the amount of days the loan will last
 	 */
 	public Loan(int borrowDays) {
-		borrowDate = LocalDate.now();
+		startDate = LocalDate.now();
 		daysBorrowed = borrowDays;
 		lent = true;
 		copy = null;
@@ -74,8 +74,8 @@ public class Loan {
 	 * @param d LocalDate object to convert to String and overwrite old borrowDate
 	 *          with
 	 */
-	public void setBorrowDate(LocalDate d) {
-		this.borrowDate = d; // TODO LocalDate vs String
+	public void setStartDate(LocalDate d) {
+		this.startDate = d; // TODO LocalDate vs String
 	}
 
 	/**
@@ -85,15 +85,6 @@ public class Loan {
 	 */
 	public void setDaysBorrowed(int daysToAdd) {
 		daysBorrowed = daysToAdd;
-	}
-
-	/**
-	 * Increments daysBorrowed by specified days
-	 * 
-	 * @param days amount of days to increment daysBorrowed with
-	 */
-	public void addDaysToLoan(int days) {
-		daysBorrowed += days;
 	}
 
 	/**

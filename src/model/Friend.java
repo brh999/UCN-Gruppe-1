@@ -52,12 +52,5 @@ public class Friend {
 	public String getName() {
 		return name;
 	}
-	/**
-	 * This function overwrites name with specified new name
-	 * @param name 
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
 
 }

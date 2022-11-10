@@ -32,8 +32,15 @@ public class LoanCtrl {
 	public Friend findFriendByPhone(String phone) {
 		Friend res = null;
 		res = new FriendCtrl().findFriendByPhone(phone);
-		cLoan.setFriend(res);
+		setFriend(res);
 		return res;
+	}
+
+	private void setFriend(Friend friend) {
+		if (cLoan != null) {
+			cLoan.setFriend(friend);
+		}
+
 	}
 
 	/**
@@ -47,10 +54,16 @@ public class LoanCtrl {
 		LP lp = LPCtrl.findLPByTitle(title);
 		if (lp != null) {
 			res = LoanCont.getInstance().findCopyAvailable(lp);
-			cLoan.setCopy(res);
+			setCopy(res);
 		}
 
 		return res;
+	}
+
+	private void setCopy(Copy copy) {
+		if (cLoan != null) {
+			cLoan.setCopy(copy);
+		}
 	}
 
 	/**
@@ -59,7 +72,9 @@ public class LoanCtrl {
 	 */
 
 	public void confirmLoan() {
-		LoanCont.getInstance().addLoanToContainer(cLoan);
+		if (cLoan.getCopy() != null && cLoan.getFriend() != null) {
+			LoanCont.getInstance().addLoanToContainer(cLoan);
+		}
 	}
 
 	public Loan getcLoan() {

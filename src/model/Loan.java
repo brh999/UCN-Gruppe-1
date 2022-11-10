@@ -51,9 +51,9 @@ public class Loan {
 	}
 
 	/**
-	 * Returns the current state of this Loan
+	 * Returns the isLent boolean of this Loan
 	 * 
-	 * @return boolean state of this Loan
+	 * @return boolean isLent of this Loan
 	 */
 	public boolean isLent() {
 		return lent;
@@ -94,10 +94,6 @@ public class Loan {
 	 */
 	public Friend getFriend() {
 		return friend;
-	}
-	
-	public void setLent(boolean lent) {
-		this.lent = lent;
 	}
 
 }

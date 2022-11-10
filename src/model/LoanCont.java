@@ -59,10 +59,21 @@ public class LoanCont {
 		return res;
 	}
 
+	/**
+	 * Adds the specified Loan object to the ArrayList of Loan objects for this
+	 * LoanCont
+	 * 
+	 * @param cLoan Loan object to add to the ArrayList of this LoanCont
+	 */
 	public void addLoanToContainer(Loan cLoan) {
 		loans.add(cLoan);
 	}
 
+	/**
+	 * Returns the size of ArrayList loans for this LoanCont
+	 * 
+	 * @return size of the ArrayList of loans for this LoanCont
+	 */
 	public int getLoansSize() {
 		return loans.size();
 	}

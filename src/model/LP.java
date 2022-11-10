@@ -66,7 +66,6 @@ public class LP {
 		return title;
 	}
 
-
 	/**
 	 * Returns the ArrayList of Copy objects from this LP // TODO er det en ny
 	 * ArrayList eller en memory reference?

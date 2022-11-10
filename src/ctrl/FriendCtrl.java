@@ -12,7 +12,8 @@ import model.Friend;
 
 public class FriendCtrl {
 
-	/** Find friend by phone number
+	/**
+	 * Find friend by phone number
 	 * 
 	 * @param phone Phone number to search friend by
 	 * @return Friend
@@ -20,6 +21,5 @@ public class FriendCtrl {
 	public Friend findFriendByPhone(String phone) {
 		return FriendCont.getInstance().findFriendByPhone(phone);
 	}
-	
-	
+
 }

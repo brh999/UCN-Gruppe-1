@@ -48,11 +48,21 @@ public class Copy {
 		return serialNumber;
 	}
 
+	/**
+	 * Sets the specified LP object for this Copy
+	 * 
+	 * @param lp LP object to set for this Copy
+	 */
 	public void setLP(LP lp) {
 		this.lp = lp;
-		
+
 	}
-	
+
+	/**
+	 * Returns the title of the LP object for this Copy
+	 * 
+	 * @return title of the LP object for this Copy
+	 */
 	public String getTitle() {
 		return lp.getTitle();
 	}

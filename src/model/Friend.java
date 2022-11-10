@@ -19,13 +19,14 @@ public class Friend {
 	private String phone;
 
 	/**
- 	* This methode creates a Friend with:
- 	* @param name
- 	* @param address
- 	* @param postal
- 	* @param city
- 	* @param phone
- 	*/
+	 * This methode creates a Friend with:
+	 * 
+	 * @param name
+	 * @param address
+	 * @param postal
+	 * @param city
+	 * @param phone
+	 */
 
 	public Friend(String name, String address, String postal, String city, String phone) {
 		this.name = name;
@@ -37,6 +38,7 @@ public class Friend {
 
 	/**
 	 * This methos returns phone from a friend
+	 * 
 	 * @return phone
 	 */
 
@@ -46,6 +48,7 @@ public class Friend {
 
 	/**
 	 * This methos returns name
+	 * 
 	 * @return name
 	 */
 

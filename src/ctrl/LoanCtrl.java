@@ -36,6 +36,12 @@ public class LoanCtrl {
 		return res;
 	}
 
+	/**
+	 * Sets the Friend object for this cLoan object for this LoanCtrl, if the
+	 * specified Friend object is not null
+	 * 
+	 * @param friend Friend object to set for cLoan
+	 */
 	private void setFriend(Friend friend) {
 		if (cLoan != null) {
 			cLoan.setFriend(friend);
@@ -60,6 +66,12 @@ public class LoanCtrl {
 		return res;
 	}
 
+	/**
+	 * Sets the Copy object for this cLoan object for this LoanCtrl, if the
+	 * specified Copy object is not null
+	 * 
+	 * @param copy Copy object to set for cLoan
+	 */
 	private void setCopy(Copy copy) {
 		if (cLoan != null) {
 			cLoan.setCopy(copy);
@@ -77,6 +89,11 @@ public class LoanCtrl {
 		}
 	}
 
+	/**
+	 * Returns the current loan object cLoan for this LoanCtrl
+	 * 
+	 * @return current loan object cLoan
+	 */
 	public Loan getcLoan() {
 		return cLoan;
 	}

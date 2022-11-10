@@ -23,7 +23,7 @@ class TestLPCtrl {
 		lp1 = new LP(9876, "TestLP", "Mr.Artist", "1998");
 		lCont.addLP(lp1);
 	}
-
+                 
 
 	@Test // Test findLPByTitle() to find an instanced LP object by it's title.
 	void test1() {

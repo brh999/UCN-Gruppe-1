@@ -35,10 +35,11 @@ public class LoanCont {
 	public LoanCont() {
 		loans = new ArrayList<>();
 	}
-	
+
 	/**
 	 * Finds the first copy available from a LP
-	 * @param lp  The LP to find the first available copy from.
+	 * 
+	 * @param lp The LP to find the first available copy from.
 	 * @return Copy
 	 */
 	public Copy findCopyAvailable(LP lp) {
@@ -60,6 +61,10 @@ public class LoanCont {
 
 	public void addLoanToContainer(Loan cLoan) {
 		loans.add(cLoan);
+	}
+
+	public ArrayList<Loan> getLoans() {
+		return loans;
 	}
 
 }

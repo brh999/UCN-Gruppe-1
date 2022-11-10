@@ -34,5 +34,7 @@ class TestFriendCtrl {
 	void test2() {
 		assertEquals(null, fCtrl.findFriendByPhone(""));
 	}
+	
+	
 
 }

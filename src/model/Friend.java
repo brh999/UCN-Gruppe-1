@@ -19,7 +19,7 @@ public class Friend {
 	private String phone;
 
 	/**
- 	* This methos creates a Friend with:
+ 	* This methode creates a Friend with:
  	* @param name
  	* @param address
  	* @param postal

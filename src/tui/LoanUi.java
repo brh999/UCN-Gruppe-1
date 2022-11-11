@@ -67,7 +67,6 @@ public class LoanUi {
 	private void findCopyByTitle() {
 		System.out.println("Input the title of your LP: ");
 		String input = scanner.nextLine().toLowerCase();
-
 		if (lc.findAvailableCopyByTitle(input) == null) {
 			System.out.println(input + " is not a valid input or all copies are lent out."
 					+ "\nPlease try agian(Press any key to continue)");
@@ -86,6 +85,7 @@ public class LoanUi {
 			Friend f = lc.findFriendByPhone(input);
 			if (f == null) {
 				System.out.println("No friend found with phone: " + input);
+				addFriendToLoan();
 			}
 		} else {
 			System.out.println(input + " is not a valid number." 

@@ -10,10 +10,6 @@ import model.*;
 
 public class LPCtrl {
 
-	public LPCtrl() {
-
-	}
-
 	/**
 	 * Returns LP by title
 	 * 
@@ -21,10 +17,8 @@ public class LPCtrl {
 	 * @return LP
 	 */
 
-	public static LP findLPByTitle(String title) {
-		LPCont lpc = LPCont.getInstance();
-		LP lp = lpc.findLPByTitle(title);
-		return lp;
+	public LP findLPByTitle(String title) {
+		return LPCont.getInstance().findLPByTitle(title);
 	}
 
 }

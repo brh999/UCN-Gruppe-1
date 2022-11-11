@@ -11,6 +11,7 @@ import ctrl.*;
 
 public class LoanCtrl {
 	private Loan cLoan;
+	
 
 	/**
 	 * Create a loan object
@@ -57,12 +58,11 @@ public class LoanCtrl {
 	 */
 	public Copy findAvailableCopyByTitle(String title) {
 		Copy res = null;
-		LP lp = LPCtrl.findLPByTitle(title);
+		LP lp = new LPCtrl().findLPByTitle(title);
 		if (lp != null) {
 			res = LoanCont.getInstance().findCopyAvailable(lp);
 			setCopy(res);
 		}
-
 		return res;
 	}
 

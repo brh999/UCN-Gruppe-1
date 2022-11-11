@@ -44,10 +44,11 @@ public class LPCont {
 	 */
 	public LP findLPByTitle(String title) {
 		LP res = null;
-
-		for (int i = 0; i < LPs.size(); i++) {
+		boolean found = false;
+		for (int i = 0; i < LPs.size() && !found; i++) {
 			if (LPs.get(i).getTitle().equalsIgnoreCase(title)) {
 				res = LPs.get(i);
+				found = true;
 			}
 		}
 		return res;

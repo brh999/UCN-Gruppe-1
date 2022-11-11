@@ -79,7 +79,7 @@ public class LoanUi {
 	}
 
 	private void addFriendToLoan() {
-		System.out.println("What's you friend/lenders phone number?");
+		System.out.println("What's your friend/lenders phone number?");
 		System.out.println("Write here: ");
 		String input = scanner.nextLine();
 		if (isNumeric(input)) {

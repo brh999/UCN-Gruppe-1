@@ -4,7 +4,7 @@ import model.*;
 
 /**
  * 
- * @author Rasmus, Alex, Kasper, Dani (Gruppe 1)
+ * @author Rasmus, Alex, Kasper, Danny (Gruppe 1)
  *
  */
 

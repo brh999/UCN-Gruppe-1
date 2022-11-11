@@ -6,7 +6,7 @@ import model.Friend;
 
 /**
  * 
- * @author Alex, Rasmus, Kasper, Dani (Gruppe 1)
+ * @author Alex, Rasmus, Kasper, Danny (Gruppe 1)
  *
  */
 

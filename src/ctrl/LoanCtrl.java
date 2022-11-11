@@ -5,7 +5,7 @@ import ctrl.*;
 
 /**
  * 
- * @author Rasmus, Alex, Kasper, Dani
+ * @author Rasmus, Alex, Kasper, Danny
  *
  */
 

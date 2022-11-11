@@ -83,14 +83,16 @@ public class LoanUi {
 		System.out.println("Write here: ");
 		String input = scanner.nextLine();
 		if (isNumeric(input)) {
-			lc.findFriendByPhone(input);
+			Friend f = lc.findFriendByPhone(input);
+			if (f == null) {
+				System.out.println("No friend found with phone: " + input);
+			}
 		} else {
 			System.out.println(input + " is not a valid number." 
 					+ "\nPlease try agian(Press any key to continue)");
 			scanner.nextLine();
 			addFriendToLoan();
 		}
-
 	}
 
 	private void createLoan() {
@@ -109,12 +111,14 @@ public class LoanUi {
 	}
 
 	private boolean isNumeric(String str) {
+		boolean isValid;
 		try {
 			Integer.parseInt(str);
-			return true;
+			isValid =  true;
 		} catch (NumberFormatException e) {
-			return false;
+			isValid = false;
 		}
+		return isValid;
 	}
 
 	private void optionsMessage() {

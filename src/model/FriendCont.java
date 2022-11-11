@@ -44,13 +44,12 @@ public class FriendCont {
 	 */
 	public Friend findFriendByPhone(String phone) {
 		Friend res = null;
-		for (int i = 0; i < friends.size(); i++) {
+		boolean found = false;
+		for (int i = 0; i < friends.size() && !found; i++) {
 			if (friends.get(i).getPhone().equals(phone)) {
 				res = friends.get(i);
+				found = true;
 			}
-		}
-		if (res == null) {
-			System.out.println("No friend found with phone: " + phone);
 		}
 		return res;
 	}

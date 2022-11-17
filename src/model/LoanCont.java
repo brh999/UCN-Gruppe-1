@@ -32,7 +32,7 @@ public class LoanCont {
 	/**
 	 * This is the constructor for the LoanCont and creates an instance of loans
 	 */
-	public LoanCont() {
+	private LoanCont() {
 		loans = new ArrayList<>();
 	}
 
